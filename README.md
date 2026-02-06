@@ -85,7 +85,7 @@ This project analyzes **255,347 loan records** to identify default risk patterns
 ### **1. Overall Portfolio Health**
 - **Total Loans:** 255,347
 - **Portfolio Value:** $6.4 billion
-- **Default Rate:** [To be filled after analysis]
+- **Default Rate:** 29,653
 
 ### **2. Top Risk Predictors** (Ranked)
 1. **Credit Score** - Strongest predictor
@@ -93,17 +93,16 @@ This project analyzes **255,347 loan records** to identify default risk patterns
 3. **Income Level** - Moderate impact
 
 ### **3. Highest Risk Segments**
-- **Education:** [Fill with actual finding]
-- **Employment Type:** [Fill with actual finding]
-- **Loan Purpose:** [Fill with actual finding]
+- **Education:** High School
+- **Employment Type:** Unemployed
+- **Loan Purpose:** Business
 
 ### **4. Notable Patterns**
-- Credit score <580 shows [X]% default rate vs [Y]% for 740+
+- Credit score <580 shows 12.47% default rate vs 9.81% for 740+
 - DTI ratio >50% significantly increases risk
-- Co-signers reduce default risk by [X]%
+- Co-signers reduce default risk by 2,51%
 
 ---
-
 ## 💻 SQL Techniques Used
 
 This project demonstrates proficiency in:
@@ -132,11 +131,16 @@ This project demonstrates proficiency in:
 ```
 loan-default-analysis/
 │
-├── 02_data_cleaning.sql          # Data quality checks & validation
-├── 03_data_normalization.sql     # Star Schema creation
-├── 04_data_analysis.sql          # 15 analytical queries
+├── data/
+│   └── loan_default.csv          # Raw dataset (Kaggle)
 │
-└── README.md                      # Project documentation (this file)
+├── sql/
+│   ├── 01_data_exploration.sql   # Initial data exploration & profiling
+│   ├── 02_data_cleaning.sql      # Data quality checks & validation
+│   ├── 03_data_normalization.sql # Star Schema creation
+│   └── 04_data_analysis.sql      # Core analysis – 15 business queries
+│
+└── README.md                     # Project documentation
 ```
 ---
 
@@ -201,13 +205,12 @@ Based on the analysis, the following actions are recommended:
 
 | Credit Band        | Total Loans | Default Rate |
 |--------------------|-------------|--------------|
-| Poor (<580)        | XX,XXX      | XX.X%        |
-| Fair (580-669)     | XX,XXX      | XX.X%        |
-| Good (670-739)     | XX,XXX      | XX.X%        |
-| Very Good (740-799)| XX,XXX      | XX.X%        |
-| Excellent (800+)   | XX,XXX      | X.X%         |
+| Poor (<580)        | 130,223      | 12.47%       |
+| Fair (580-669)     | 41,847       | 11.43%       |
+| Good (670-739)     | 32,073       | 10.63%       |
+| Very Good (740-799)| 27,736       | 10.50%       |
+| Excellent (800+)   | 23,468       | 9.81%        |
 
-*[Fill in actual numbers after running queries]*
 
 ---
 
