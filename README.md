@@ -85,7 +85,7 @@ This project analyzes **255,347 loan records** to identify default risk patterns
 ### **1. Overall Portfolio Health**
 - **Total Loans:** 255,347
 - **Portfolio Value:** $6.4 billion
-- **Default Rate:** 29,653
+- **Default Rate:** 11.61%
 
 ### **2. Top Risk Predictors** (Ranked)
 1. **Credit Score** - Strongest predictor
@@ -95,12 +95,12 @@ This project analyzes **255,347 loan records** to identify default risk patterns
 ### **3. Highest Risk Segments**
 - **Education:** High School
 - **Employment Type:** Unemployed
-- **Loan Purpose:** Business
+- **Loan Purpose:** Business loans
 
 ### **4. Notable Patterns**
-- Credit score <580 shows 12.47% default rate vs 9.81% for 740+
+- Credit score <580 shows a higher default rate (12.47%) compared to 740+ (9.81%)
 - DTI ratio >50% significantly increases risk
-- Co-signers reduce default risk by 2,51%
+- Co-signers reduce default risk by 2.51%
 
 ---
 ## 💻 SQL Techniques Used
